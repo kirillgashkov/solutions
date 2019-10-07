@@ -2,6 +2,12 @@
 .*
 *~
 
+# Ignore builds.
+cmake-build-debug/
+
+# Ignore C++ configs.
+CMakeLists.txt
+
 # Keep git files.
 !.gitignore
 !.gitattributes
