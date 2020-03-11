@@ -1,6 +1,6 @@
-# cp3-solutions
+# cp-solutions
 
-My solutions to the "Competitive Programming 3" problems.
+My solutions to various competitive programming problems.
 
 ## What I Use
 
