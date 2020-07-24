@@ -1,4 +1,4 @@
-# cp-solutions
+# CP Solutions
 
 My solutions to various competitive programming problems.
 
