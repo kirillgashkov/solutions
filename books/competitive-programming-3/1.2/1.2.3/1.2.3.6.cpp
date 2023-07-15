@@ -1,9 +1,9 @@
-#include <iostream>
-#include <vector>
+#include <algorithm>
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <utility>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -13,26 +13,24 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef vector<int> vi;
 
+int main(int argc, char const* argv[]) {
+  ifstream fin("input.txt");
 
-int main(int argc, char const *argv[])
-{
-    ifstream fin("input.txt");
+  int target = 23;
+  fin >> target;
 
-    int target = 23;
-    fin >> target;
+  int num;
+  vi nums = {10, 15, 20, 25, 30, 35};
+  while (fin >> num) {
+    nums.push_back(num);
+  }
 
-    int num;
-    vi nums = {10, 15, 20, 25, 30, 35};
-    while (fin >> num) {
-        nums.push_back(num);
-    }
+  bool res = binary_search(nums.begin(), nums.end(), target);
+  if (res) {
+    cout << "YES\n";
+  } else {
+    cout << "NO\n";
+  }
 
-    bool res = binary_search(nums.begin(), nums.end(), target);
-    if (res) {
-        cout << "YES\n";
-    } else {
-        cout << "NO\n";
-    }
-
-    return 0;
+  return 0;
 }
